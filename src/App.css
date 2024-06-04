@@ -38,6 +38,8 @@ main.container .__images{
   flex-wrap: nowrap;
   height:200px;
   gap:10px;
+  padding:5px;
+
   overflow-y: scroll;
   scrollbar-width: none;
 }
