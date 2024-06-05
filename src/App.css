@@ -40,7 +40,7 @@ main.container .__images{
   gap:10px;
   padding:5px;
 
-  overflow-y: scroll;
+  overflow-x: scroll;
   scrollbar-width: none;
 }
 main.container div div{
