@@ -1,22 +1,11 @@
 import data from "../assets/JSON/movies.json";
-
+import Item from "./Item";
 const Items = () => {
   return (
     <>
-      {data.map((elem, index) => {
+      {data.map((elem) => {
         return (
-          <section key={index}>
-            <h2>{elem.category}</h2>
-            <div className="__images">
-              {elem.images.map((elem, index2) => {
-                return (
-                  <div key={index2}>
-                    <img src={elem} alt="" />
-                  </div>
-                );
-              })}
-            </div>
-          </section>
+          <Item elem={elem}/>
         );
       })}
     </>
