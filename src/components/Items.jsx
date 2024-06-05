@@ -5,7 +5,12 @@ const Items = () => {
     <>
       {data.map((elem) => {
         return (
-          <Item elem={elem}/>
+          <section key={elem.category}>
+            <h2>{elem.category}</h2>
+            <div className="__images">
+              <Item elem={elem}/>
+            </div>
+          </section>
         );
       })}
     </>
